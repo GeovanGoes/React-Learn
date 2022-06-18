@@ -7,3 +7,6 @@ export function tempoParaSegundos (tempo: string) {
 
     return Number(segundos) + horasEmSegundos + minutosEmSegundos;
 }
+
+
+

@@ -1,3 +1,4 @@
+import { spawn } from 'child_process';
 import { ITarefa } from '../../../types/tarefa';
 import style from './Item.module.scss';
 
@@ -16,8 +17,8 @@ export default function Item(
     }: Props) {
     return (
         <li 
-            className={`${style.item} ${selecionado ? style.itemSelecionado : ''}`} 
-            onClick={() => selecionaTarefa(
+            className={`${style.item} ${selecionado ? style.itemSelecionado : ''} ${completado ? style.itemCompletado : ''}`} 
+            onClick={() => !completado && selecionaTarefa(
                 {
                     tarefa, 
                     tempo, 
@@ -32,6 +33,7 @@ export default function Item(
             <span>
                 {tempo} 
             </span>
+            {completado && <span className={style.concluido} aria-label="tarefa completada"></span>}
         </li>
     )
 }
