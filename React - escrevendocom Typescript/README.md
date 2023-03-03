@@ -1,3 +1,18 @@
+## RESUMO PESSOAL
+
+Function Component:
+ - Existem Hooks 
+ - Mais atual, atualizações serão feitas para ele
+ - Por ser uma funcao o escopo é compartilhado.
+
+
+Class Component
+ - Para estado usa-se statefull component
+ - Quando não há necessidade de estado usa-se stateless component
+ - Na declaração dos métodos usa-se arrow funciont ex: foo = () => {}
+ - Escopo apartado entre class e functions
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -44,3 +59,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
